@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  min-height: 100vh;
+  /*background-image: url('https://qph.cf2.quoracdn.net/main-qimg-82815c1b0b8b0a66700a7d2c44e4c622-lq');*/
+  /*background-repeat: no repeat;*/
+}
+
+.宇宙 {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 900px;
+  height: 900px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.軌道 {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  border: 2px solid grey;
+  animation: 動畫 15s linear infinite;
+}
+
+.軌道7 {
+  width: 481px;
+  height: 481px;
+  animation: 動畫 17s linear infinite;
+}
+
+.軌道6 {
+  width: 412px;
+  height: 412px;
+  animation: 動畫 10s linear infinite;
+}
+
+.軌道5 {
+  width: 343px;
+  height: 343px;
+  animation: 動畫 9s linear infinite;
+}
+
+.軌道4 {
+  width: 274px;
+  height: 274px;
+  animation: 動畫 24s linear infinite;
+}
+
+.軌道3 {
+  width: 205px;
+  height: 205px;
+  animation: 動畫 23s linear infinite;
+}
+
+.軌道2 {
+  width: 136px;
+  height: 136px;
+  animation: 動畫 300s linear infinite;
+}
+
+.軌道1 {
+  width: 67px;
+  height: 67px;
+  animation: 動畫 100s linear infinite;
+}
+
+.軌道0 {
+  width: 0px;
+  height: 0px;
+}
+
+@keyframes 動畫 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.軌道::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: var(--clr);
+  transform: translateX(-50%);
+  top: -12px;
+  left: 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 30px var(--clr),
+  0 0 80px var(--clr);
+}
